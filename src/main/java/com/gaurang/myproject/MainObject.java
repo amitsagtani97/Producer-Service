@@ -1,9 +1,19 @@
 package com.gaurang.myproject;
 import java.util.*;
+
+import com.fasterxml.jackson.annotation.JsonProperty;
 public class MainObject {
 	private String orderid;
 	private List<Products> products;
+	@JsonProperty("receipient")
 	private Recipent rp;
+	
+	public MainObject(String orderid, List<Products> products, Recipent receipient) {
+		super();
+		this.orderid = orderid;
+		this.products = products;
+		this.rp = receipient;
+	}
 	public String getOrderid() {
 		return orderid;
 	}

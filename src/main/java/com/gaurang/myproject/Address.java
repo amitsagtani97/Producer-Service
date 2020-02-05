@@ -7,6 +7,17 @@ public class Address {
 	private String city;
 	private String state;
 	private String country;
+	
+	public Address(String addressType, String line1, String line2, String city, String state, String country,
+			String getCity) {
+		super();
+		this.addressType = addressType;
+		this.line1 = line1;
+		this.line2 = line2;
+		this.city = city;
+		this.state = state;
+		this.country = country;
+	}
 	public String getAddressType() {
 		return addressType;
 	}
@@ -43,6 +54,7 @@ public class Address {
 	public void setCountry(String country) {
 		this.country = country;
 	}
+	
 	
 	
 

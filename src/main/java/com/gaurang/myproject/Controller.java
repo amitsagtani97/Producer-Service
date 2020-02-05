@@ -25,11 +25,12 @@ public class Controller{
     private static final Logger log = LoggerFactory.getLogger(Controller.class);
 
 	@PostMapping(value = "/producer")
-	public String producer(@RequestBody Contact obj) {
-		String messageData=obj.getName() + obj.getEmail() +obj.getEmail() + obj.getPhone();
+	public MainObject producer(@RequestBody MainObject obj) {
+		String messageData=obj.toString();
 		
 		amqpTemplate.convertAndSend(exchange, routingKey, messageData);
-		return messageData;
+		System.out.println(obj);
+		return obj;
 	}
 	    /*@Scheduled(fixedDelay = 3000L)
 	    public void sendPracticalTip() {

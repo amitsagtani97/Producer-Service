@@ -5,6 +5,12 @@ import java.util.*;
 public class Recipent {
 	private Contact contacts;
 	private List<Address> adres;
+	
+	public Recipent(Contact contacts, List<Address> adres) {
+		super();
+		this.contacts = contacts;
+		this.adres = adres;
+	}
 	public Contact getContacts() {
 		return contacts;
 	}
