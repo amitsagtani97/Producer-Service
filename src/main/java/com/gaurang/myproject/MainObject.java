@@ -5,7 +5,6 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 public class MainObject {
 	private String orderid;
 	private List<Products> products;
-	@JsonProperty("receipient")
 	private Recipent rp;
 	
 	public MainObject(String orderid, List<Products> products, Recipent receipient) {
@@ -32,6 +31,7 @@ public class MainObject {
 	public void setRp(Recipent rp) {
 		this.rp = rp;
 	}
+	
 	
 	
 	

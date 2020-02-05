@@ -21,7 +21,7 @@ public class Controller{
 	private AmqpTemplate amqpTemplate;
 	private final static String exchange="my-exchange";
 	private final static String routingKey="my";
-	private final static String messageData="from upgradsend to rabbit mq hello";
+	//private final static String messageData="from upgradsend to rabbit mq hello";
     private static final Logger log = LoggerFactory.getLogger(Controller.class);
 
 	@PostMapping(value = "/producer")

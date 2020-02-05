@@ -29,9 +29,5 @@ public class Contact {
 	public void setPhone(String phone) {
 		this.phone = phone;
 	}
-	@Override
-	public String toString() {
-		String temp="Employee details are "+ this.name + " " +this.phone + " " + this.email;
-		return temp;
-	}
+	
 }
